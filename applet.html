@@ -2,157 +2,115 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>App Gallery</title>
+    <title>Mapping Web App</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
     <style>
         body {
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            font-family: 'Poppins', sans-serif;
-            min-height: 100vh;
-            padding: 2rem 0;
+            background-color: #f0f4f8; 
         }
         .title {
-            margin: 2rem 0 3rem;
             text-align: center;
-            color: #2c3e50;
-            font-size: 3rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+            margin: 2rem 0; 
+            font-size: 2.5rem; 
+            color: #343a40; 
         }
         .applet-flex-container {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-       
-        .applet-flex-container > div {
-            margin: 1.5rem;
-            transition: all 0.3s ease-in-out;
-        }
-        .applet-flex-container > div:hover {
-            transform: translateY(-10px) scale(1.03);
+            gap: 1rem; 
+            padding: 0 2rem; 
         }
         .card {
-            border: none;
-            border-radius: 20px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            background: white;
+            border: none; 
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            transition: transform 0.2s; 
         }
-        .card-body {
-            padding: 2rem;
-        }
-        .card-title {
-            color: #3498db;
-            font-weight: 600;
-            margin-bottom: 1rem;
-            font-size: 1.4rem;
-        }
-        .card-text {
-            color: #34495e;
-            font-size: 1rem;
-            line-height: 1.6;
+        .card:hover {
+            transform: scale(1.05); 
         }
         .btn-primary {
-            background-color: #3498db;
-            border: none;
-            border-radius: 30px;
-            padding: 0.7rem 1.8rem;
-            font-weight: 500;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: all 0.3s ease;
-            margin-top: 1rem;
+            background-color: #007bff; 
+            border: none; 
         }
         .btn-primary:hover {
-            background-color: #2980b9;
-            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+            background-color: #0056b3;
         }
-        @media (max-width: 768px) {
-            .title {
-                font-size: 2.5rem;
-            }
-            .card {
-                width: 90% !important;
-            }
+        footer {
+            margin-top: 22rem; 
+            padding: 1rem; 
+            background-color: #343a40;
+            color: white; 
+            text-align: center; 
         }
-        #map { height: 500px; }
     </style>
 </head>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="applet.html">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Applet
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="applet-1.html">Applet 1</a></li>
+                <li><a class="dropdown-item" href="applet-2.html">Applet 2</a></li>
+                <li><a class="dropdown-item" href="applet-3.html">Applet 3</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+</nav>
 <body>
-    <div id="map"></div>
+      <h1 class="title">APP GALLERY</h1>
+      <div class="applet-flex-container">
+        <div class="card" style="width: 18rem;">
+         <img src="https://i.pinimg.com/originals/30/5f/f8/305ff88e24f9460bb79644e197af92a9.gif" class="card-img-top" height="191px" alt="Basic Events">
+           <div class="card-body">
+             <h5 class="card-title">Applet 1 - Basic Events</h5> 
+             <p class="card-text">This application contains the basic implementation of DOM events.</p>
+             <a href="applet-1.html" class="btn btn-primary">Go to Applet</a>
+           </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="https://i.pinimg.com/originals/20/81/27/2081270ee56f88c770bff6bd05867e05.gif" class="card-img-top" height="191px" alt="Leaflet Map">
+            <div class="card-body">
+              <h5 class="card-title">Applet 2 - Leaflet Map</h5>
+              <p class="card-text">This application contains the basic web map.</p>
+              <a href="applet-2.html" class="btn btn-primary">Go to Applet</a>
+            </div>
+         </div>
+
+         <div class="card" style="width: 18rem;">
+            <img src="https://i.pinimg.com/originals/7e/02/d4/7e02d46ace448205435d8c10d66bbceb.gif" class="card-img-top" height="191px" alt="Event Logger">
+            <div class="card-body">
+              <h5 class="card-title">Applet 3 - Event Logger</h5>
+              <p class="card-text">This contains the logs with the date and total number of logs.</p>
+              <a href="applet-3.html" class="btn btn-primary">Go to Applet</a>
+            </div>
+         </div>
+       </div>
+       <footer>
+           <p>&copy; 2023 Your Company. All rights reserved.</p>
+       </footer>
 </body>
 </html>
-<script>
-  var map = L.map('map').setView([8.368207, 124.864254], 13);
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      maxZoom: 19,
-    }).addTo(map);
-
-    // Adding markers for specific coordinates
-    var markersData = {
-  "markers": [
-    {
-      "coordinates": [8.368207, 124.864254],
-      "popup": "Manolo Fortich Elementary School",
-      "openPopup": true
-    },
-    {
-      "coordinates": [8.359855, 124.868674],
-      "popup": "Northern Bukidnon State College",
-      "openPopup": false
-    },
-    {
-      "coordinates": [8.418105, 124.899917],
-      "popup": "Kilay Camp",
-      "openPopup": true
-    },
-    {
-      "coordinates": [8.368701, 124.862773],
-      "popup": "Manolo Fortich National High School",
-      "openPopup": true
-    
-    },
-    {
-      "coordinates": [8.369031, 124.859759],
-      "popup": "Kingdom Hall Of Jehova's Witnesses",
-      "openPopup": true
-    
-    }
-  ]
-};
-
-// Iterate over the markers and add them to the map
-markersData.markers.forEach(function(marker) {
-    var leafletMarker = L.marker(marker.coordinates).addTo(map)
-        .bindPopup(marker.popup);
-
-    if (marker.openPopup) {
-        leafletMarker.openPopup();
-    }
-});
-
-var popup = L.popup();
-
-function onMapClick(e) {
-    popup
-        .setLatLng(e.latlng)
-        .setContent("You clicked the map at " + e.latlng.toString())
-        .openOn(map);
-}
-
-map.on('click', onMapClick);
-</script>
-
