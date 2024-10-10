@@ -1,0 +1,26 @@
+{
+    "markers": [
+      {
+        "coordinates": [8.368207, 124.864254],
+        "popup": "Manolo Fortich Elementary School",
+        "openPopup": true
+      },
+      {
+        "coordinates": [8.359855, 124.868674],
+        "popup": "Northern Bukidnon State College",
+        "openPopup": false
+      },
+      {
+        "coordinates": [8.418105, 124.899917],
+        "popup": "Kilay Camp",
+        "openPopup": true
+      },
+      {
+        "coordinates": [8.368701, 124.862773],
+        "popup": "Manolo Fortich National High School",
+        "openPopup": true
+      },
+      {
+      }
+    ]
+  }
