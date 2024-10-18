@@ -16,5 +16,11 @@
         "Description": "This contains the logs with the date and total number of logs.",
         "file": "applet-3.html",
         "Image": "https://i.pinimg.com/originals/7e/02/d4/7e02d46ace448205435d8c10d66bbceb.gif"
+    },
+    {
+        "Applet_No": "Applet 4 - Dynamic Elements",
+        "Description": "This contains the search bar of the data that has on the applet-4.json file.",
+        "file": "applet-4.html",
+        "Image": "https://i.pinimg.com/originals/f0/7d/ff/f07dff6966ac48982773fbb149bfde48.gif"
     }
 ]
