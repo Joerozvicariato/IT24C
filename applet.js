@@ -43,3 +43,4 @@ class AppletGallery {
     }
 }
 const appletgallery = new AppletGallery('applet.json');
+console.log(appletgallery)
