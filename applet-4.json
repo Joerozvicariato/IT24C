@@ -1,6 +1,10 @@
 [
-{
-    "student_name": "Joeroz Vicariato",
-    "student_program": "Computer Science"
-}
+    {
+        "student_name": "Joeroz Vicariato",
+        "student_program": "BS-Information technology"
+    },
+    {
+        "student_name": "Katelyn Coming",
+        "student_program": "Bachelor of Science in Computer Engineering"
+    }
 ]
