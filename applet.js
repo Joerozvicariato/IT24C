@@ -42,3 +42,4 @@ class AppletGallery {
         this.renderAppletGallery(filteredApplet);
     }
 }
+const appletgallery = new AppletGallery('applet.json');
