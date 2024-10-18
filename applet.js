@@ -20,7 +20,7 @@ class AppletGallery {
 
     renderAppletGallery(appletgallery) {
         const appletgalleryCont = document.getElementById('appletgalleryCont');
-        appletgalleryCont.innerHTML = appletgallery.map(applet => 
+        appletgalleryCont.innerHTML = appletgallery.map(applet =>
             `<div class="card" style="width: 18rem;"> 
                <img src="${applet.Image}" class="card-img-top image" alt="${applet.Applet_No}">
                <h5>${applet.Applet_No}</h5>
@@ -28,5 +28,11 @@ class AppletGallery {
                <a href="${applet.file}" class="btn btn-primary">Go to Applet</a>
             </div>`
         ).join('');
+    }
+    bindSearchEvent() {
+        const appletSearchBar = document.getElementById('appletSearchBar');
+        appletSearchBar.addEventListener('input', () => {
+            this.filterApplet(appletSearchBar.value);
+        });
     }
 }
