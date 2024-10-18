@@ -35,4 +35,10 @@ class AppletGallery {
             this.filterApplet(appletSearchBar.value);
         });
     }
+    filterApplet(query) {
+        const filteredApplet = this.appletgallery.filter(applet => {
+            return applet.Applet_No.toLowerCase().includes(query.toLowerCase());
+        });
+        this.renderAppletGallery(filteredApplet);
+    }
 }
