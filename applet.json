@@ -10,5 +10,11 @@
         "Description": "This application contains the basic web map.",
         "file": "applet-2.html",
         "Image": "https://i.pinimg.com/originals/20/81/27/2081270ee56f88c770bff6bd05867e05.gif"
+    },
+    {
+        "Applet_No": "Applet 3 - Event Logger",
+        "Description": "This contains the logs with the date and total number of logs.",
+        "file": "applet-3.html",
+        "Image": "https://i.pinimg.com/originals/7e/02/d4/7e02d46ace448205435d8c10d66bbceb.gif"
     }
 ]
