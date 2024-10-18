@@ -1,0 +1,26 @@
+[
+    {
+        "Applet_No": "Applet 1 - Basic Events",
+        "Description": "This application contains the basic implementation of DOM events.",
+        "file": "applet-1.html",
+        "Image": "https://i.pinimg.com/originals/30/5f/f8/305ff88e24f9460bb79644e197af92a9.gif"
+    },
+    {
+        "Applet_No": "Applet 2 - Leaflet Map",
+        "Description": "This application contains the basic web map.",
+        "file": "applet-2.html",
+        "Image": "https://i.pinimg.com/originals/20/81/27/2081270ee56f88c770bff6bd05867e05.gif"
+    },
+    {
+        "Applet_No": "Applet 3 - Event Logger",
+        "Description": "This contains the logs with the date and total number of logs.",
+        "file": "applet-3.html",
+        "Image": "https://i.pinimg.com/originals/7e/02/d4/7e02d46ace448205435d8c10d66bbceb.gif"
+    },
+    {
+        "Applet_No": "Applet 4 - Dynamic Elements",
+        "Description": "This contains the search bar of the data that has on the applet-4.json file.",
+        "file": "applet-4.html",
+        "Image": "https://i.pinimg.com/originals/f0/7d/ff/f07dff6966ac48982773fbb149bfde48.gif"
+    }
+]
