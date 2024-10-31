@@ -22,5 +22,11 @@
         "Description": "This contains the search bar of the data that has on the applet-4.json file.",
         "file": "applet-4.html",
         "Image": "https://i.pinimg.com/originals/f0/7d/ff/f07dff6966ac48982773fbb149bfde48.gif"
+    },
+    {
+        "Applet_No": "Applet 5 - Open weather",
+        "Description": "This contains the details of weather based on the specific location",
+        "file": "applet-5.html",
+        "Image": "https://i.pinimg.com/originals/08/70/2e/08702efea19a0064d67f164bad6a8dfc.gif"
     }
 ]
