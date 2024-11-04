@@ -61,7 +61,7 @@ class TodoList {
 }
 class TimestampedTodoList extends TodoList {
     addTask(taskText) {
-        super.addTask(taskText);
+        super.addTask(taskText);``
         const taskItem = this.todoList.lastChild;
         const timestamp = document.createElement('span');
         timestamp.className = 'timestamp';
@@ -69,3 +69,4 @@ class TimestampedTodoList extends TodoList {
         taskItem.appendChild(timestamp);
     }
 }
+document.addEventListener('DOMContentLoaded', () => new TodoList());
